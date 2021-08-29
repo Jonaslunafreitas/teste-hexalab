@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="background1">
-      <!-- LADO ESQUERDO -->
-    <div class="lado_esquerdo">
+
+  <header> </header>
+
+  <article class="container fundo">
+    <!-- LADO ESQUERDO -->
+    <div class="row">
+
+      <section class="col-12 col-sm-12 col-md-7 col-lg-7 ">
         <form>
-            <div class="titulo-formulario1">
-              <p>Digite o valor total do pedido</p>  
+          <section class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Digite o valor total do pedido</label>
+            <div class="input-group">
+              <span class="input-group-text">R$</span>
+              <input type="text" class="form-control input-geral">
             </div>
-          <div class="form-linha2">
-              <input type="text" id="total-pedido" required placeholder="R$                                                       Digite o valor aqui" >      
-          </div>
-          <div class="titulo-formulario1">
-            <p>Quanto quer dar de gorjeta</p>  
-          </div>
-          <div class="porcentagem">
+          </section>
 
-            <div class="form-porcentagem1">
-             <button type="submit" id="5"> 5%</button> 
-              <button type="submit" id="10"> 10%</button>
-              <button type="submit" id="15"> 15%</button> 
 
-             <div class="form-porcentagem2">
-                <button type="submit" id="25">25%</button>
-                <input type="text"  id="personalize-por" required placeholder="$                   Personalize aqui">
+          <section class="row mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-12 mb-3 ">
+              <label for="exampleInputEmail1" class="form-label">Quanto quer dar de gorjeta</label>
             </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+              <button type="button" id="5" class="btn-porcentagem" value="5">5%</button>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+              <button type="submit" id="10" class="btn-porcentagem" value="10">10%</button>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+              <button type="submit" id="15" class="btn-porcentagem" value="15"> 15%</button>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 mb-3">
+              <button type="submit" id="25" class="btn-porcentagem" value="25">25%</button>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-8">
+              <div class="input-group">
+                <span class="input-group-text">%</span>
+                <input type="text" class="form-control input-geral">
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Quantas pessoas irão pagar?</label>
+            <div class="input-group">
+              <span class="input-group-text"><img src="img/icone-verde.svg" alt=""></span>
+              <input type="text" class="form-control input-geral">
+            </div>
+          </section>
+        </form>
+      </section>
+
+      <!-- LADO DIREITO  -->
+      <section class="col-12 col-sm-12 col-md-5 col-lg-5 mt-4 mb-4 mr-2 background-lado-direito">
+
+         <section class="row mb-6 mt-3">
+          <label for="exampleInputEmail1" class="form-label">Valor total da gorjeta</label>
+          <div class="input-group">
+            <span class="input-group-text">R$</span>
+            <input type="text" class="form-control input-geral input-azul">
           </div>
-        </div>
-        <div class="titulo-formulario1">
-            <p>Quantas pessoas irão pagar?</p>  
+        </section>
+
+        <section class="row mb-3 mt-5">
+          <label for="exampleInputEmail1" class="form-label">Valor que cada pessoa ira pagar de gorjeta</label>
+          <div class="input-group">
+            <span class="input-group-text">R$</span>
+            <input type="text" class="form-control input-geral input-azul">
           </div>
-        <div class="form-linha2">
-            <input type="text" id="pessoas-pagar" required placeholder="                                                        Digite o valor aqui">
-            <span><img src="img/icone-verde.svg" ></span>
-        </div>
-        </form>  
+        </section>
+
+        <section class="row mt-4">
+          <div class="col-4"></div>
+          <div class="col-4"><button type="submit" id="calcular" class="btn-calcular">calcular</button></div>
+          <div class="col-4"></div>
+            
+        </section>
     </div>
 
-       <!-- LADO DIREITO  -->
-    <div class="lado_direito">
-      <div class="background2">
-      <form>
-          <div class="titulo-formulario1">
-            <p>Valor total da gorjeta</p>  
-          </div>
-        <div class="form-linha">
-            <input type="text" id="valor-total-gorjeta" required>
-            <span>R$</span>
-        </div>
-        <div class="titulo-formulario2">
-           <p>Valor que cada pessoa irá pagar de gorjeta </p>    
-        </div> 
-        <div class="form-linha">
-          <input type="password" id="valor-pessoa-gorjeta" required>
-          <span>R$</span>
-        </div>
-        <div class="form-linha"></div>
-        <div class="form-linha"> 
-          <button type="submit" id="calcular">CALCULAR</button>
-        </div>
-      </form>
-    </div>
-    </div>
+  </article>
 
 
-  </div>
+  <footer></footer>
+
 </body>
+
 </html>
