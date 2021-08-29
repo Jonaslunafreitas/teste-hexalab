@@ -19,8 +19,7 @@ $('document').ready(function () {
 
     $(`#total-pessoas,#personalizado,#valor-pedido`).change(function(e){
         calcular();
-    })
-
+    });
 });
 
 
