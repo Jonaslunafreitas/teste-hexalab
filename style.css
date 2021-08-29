@@ -46,6 +46,17 @@ body{
    width: 100%;
 }
 
+.btn-porcentagem-selecionado{
+  background-color: #0E7182;
+  border:.10em solid #0E7182;
+  color:#fff;
+  border-radius: .5em;
+  padding:1em .5em;
+   width: 100%;
+}
+
+
+
 .input-geral{
   border-radius: .5em;
   padding:1em .5em;
@@ -58,7 +69,7 @@ body{
 }
 
 
-.input-azul :focus{
+.input-azul :disabled{
   background-color: #01a7c2   !important;
 }
 
@@ -78,3 +89,4 @@ body{
   padding:1em .5em;
    width: 100%;
 }
+
