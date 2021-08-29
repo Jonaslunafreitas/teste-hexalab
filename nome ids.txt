@@ -1,0 +1,14 @@
+IDS
+btns
+BOTÃO CALCULAR : CALCULAR
+BOTÃO 5% : 5
+BOTÃO 10% : 10
+BOTÃO 15% : 15
+BOTÃO 25$ : 25
+
+forms
+VALOR TOTAL DO PEDIDO :total-pedido
+PERSONALIZE PORCENTAGEM: personalize-por
+TOTAL PESSOAS PAGAR: pessoas-pagar
+VALOR TOTAL DA GORJETA: valor-total-gorjeta
+VALOR CADA PESSOA GORJETA: valor-pessoa-gorjeta

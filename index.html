@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background1">
+      <!-- LADO ESQUERDO -->
+    <div class="lado_esquerdo">
+        <form>
+            <div class="titulo-formulario1">
+              <p>Digite o valor total do pedido</p>  
+            </div>
+          <div class="form-linha2">
+              <input type="text" id="total-pedido" required placeholder="R$                                                       Digite o valor aqui" >      
+          </div>
+          <div class="titulo-formulario1">
+            <p>Quanto quer dar de gorjeta</p>  
+          </div>
+          <div class="porcentagem">
+
+            <div class="form-porcentagem1">
+             <button type="submit" id="5"> 5%</button> 
+              <button type="submit" id="10"> 10%</button>
+              <button type="submit" id="15"> 15%</button> 
+
+             <div class="form-porcentagem2">
+                <button type="submit" id="25">25%</button>
+                <input type="text"  id="personalize-por" required placeholder="$                   Personalize aqui">
+            </div>
+          </div>
+        </div>
+        <div class="titulo-formulario1">
+            <p>Quantas pessoas irão pagar?</p>  
+          </div>
+        <div class="form-linha2">
+            <input type="text" id="pessoas-pagar" required placeholder="                                                        Digite o valor aqui">
+            <span><img src="img/icone-verde.svg" ></span>
+        </div>
+        </form>  
+    </div>
+
+       <!-- LADO DIREITO  -->
+    <div class="lado_direito">
+      <div class="background2">
+      <form>
+          <div class="titulo-formulario1">
+            <p>Valor total da gorjeta</p>  
+          </div>
+        <div class="form-linha">
+            <input type="text" id="valor-total-gorjeta" required>
+            <span>R$</span>
+        </div>
+        <div class="titulo-formulario2">
+           <p>Valor que cada pessoa irá pagar de gorjeta </p>    
+        </div> 
+        <div class="form-linha">
+          <input type="password" id="valor-pessoa-gorjeta" required>
+          <span>R$</span>
+        </div>
+        <div class="form-linha"></div>
+        <div class="form-linha"> 
+          <button type="submit" id="calcular">CALCULAR</button>
+        </div>
+      </form>
+    </div>
+    </div>
+
+
+  </div>
+</body>
+</html>
