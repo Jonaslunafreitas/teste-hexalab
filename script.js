@@ -9,27 +9,17 @@ $('document').ready(function () {
         const value = this.value;
         removerClasseBtnPorcentagem();
         $(this).addClass("btn-porcentagem-selecionado")
-        $("#personalizado").val(value)
+        $("#personalizado").val(value);
+        calcular();
     });
 
     $("#personalizado").keypress(function (e) {
         removerClasseBtnPorcentagem();
     })
 
-    $(`#btn-calcular`).click(function (e) {
-        const ehPersonlizadoValidoLocal = ehPersonlizadoValido();
-        const ehTotalPessoasValidoLocal = ehTotalPessoasValido();
-        const ehValorPedidoValidoLocal = ehValorPedidoValido();
-        if (ehPersonlizadoValidoLocal && ehTotalPessoasValidoLocal && ehValorPedidoValidoLocal) {
-            const valorPedido = parseFloat($(`#valor-pedido`).val());
-            const personalizado = parseFloat($(`#personalizado`).val());
-            const totalPessoas = parseFloat($(`#total-pessoas`).val());
-            const valorTotal = valorPedido * (personalizado/100);
-            $("#valor-total-gorjeta").val(valorTotal.toFixed(2));
-            const valorPessoa =  valorTotal / totalPessoas;
-            $("#valor-pessoa-gorjeta").val(valorPessoa.toFixed(2));
-        }
-    });
+    $(`#total-pessoas,#personalizado,#valor-pedido`).change(function(e){
+        calcular();
+    })
 
 });
 
@@ -72,7 +62,21 @@ function ehTotalPessoasValido() {
     $(`#total-pessoas`).addClass("is-invalid");
     $(`#total-pessoas-icone`).attr("src", "img/icone-vermelho.svg");
     return false;
+}
 
+function calcular(){
+    const ehPersonlizadoValidoLocal = ehPersonlizadoValido();
+    const ehTotalPessoasValidoLocal = ehTotalPessoasValido();
+    const ehValorPedidoValidoLocal = ehValorPedidoValido();
+    if (ehPersonlizadoValidoLocal && ehTotalPessoasValidoLocal && ehValorPedidoValidoLocal) {
+        const valorPedido = parseFloat($(`#valor-pedido`).val());
+        const personalizado = parseFloat($(`#personalizado`).val());
+        const totalPessoas = parseFloat($(`#total-pessoas`).val());
+        const valorTotal = valorPedido * (personalizado/100);
+        $("#valor-total-gorjeta").val(valorTotal.toFixed(2));
+        const valorPessoa =  valorTotal / totalPessoas;
+        $("#valor-pessoa-gorjeta").val(valorPessoa.toFixed(2));
+    }
 }
 
 
