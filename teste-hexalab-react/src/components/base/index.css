@@ -1,0 +1,130 @@
+/* @import url("'https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap"); */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+} 
+/* FUNDO */
+
+/* PRIMEIRO CARD */
+
+
+/*  NOVO CSS */
+.form{
+  font-family: 'Mulish', sans-serif;
+}
+.label{
+  font-family: 'Mulish', sans-serif;
+}
+body{
+  background: #f2F6FF; 
+  -webkit-box-align: center;
+  align-items: center; 
+  display: -webkit-box;
+  display: flex;
+  font-family: "mulish", sans-serif;
+  height: 100vh;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.container{
+  margin: 3% 3px 3px 3px;
+  background-color: #f2F6FF; 
+}
+
+.fundo{
+  -webkit-box-align: center;
+  align-items: center;
+  background: #ffffff; 
+  border-radius: .5em;
+  padding: 5%;
+}
+
+
+
+
+.btn-porcentagem{
+  background-color: #01a7c2;
+  border:.10em solid #01a7c2;
+  color:#fff;
+  border-radius: .5em;
+  padding:1em .5em;
+   width: 100%;
+}
+
+.btn-porcentagem-selecionado{
+  background-color: #0E7182;
+  border:.10em solid #0E7182;
+  color:#fff;
+  border-radius: 8px;
+  padding:1em .5em;
+   width: 100%;
+}
+
+
+
+.input-geral{
+  background-color: #f2F6FF !important;
+  border-color: #f2F6FF  !important;;
+  border-radius: 8px;
+  padding:1em .5em;
+  width: 100px;
+  font-family: inherit;
+  text-align: right;
+}
+
+.span-cinza {
+    background-color: #f2F6FF !important;
+    border-color: #f2F6FF  !important;;
+}
+
+
+
+
+
+.input-geral :focus{
+  border-color: RED;
+}
+
+.form-control:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #b1b9cc;
+}
+
+
+.input-azul{
+  background-color: #01a7c2 !important;
+  border-color: #01a7c2 !important;;
+  color: #ffffff;
+  text-align: right;
+}
+
+.span-azul{
+    background-color: #01a7c2 !important;
+    border-color: #01a7c2 !important;;
+    color: #ffffff;
+}
+
+
+
+.input-azul :disabled{
+  background-color: #01a7c2   !important;
+}
+
+
+.background-lado-direito{
+  background:#E6f6f9;
+  box-shadow: 1px 1px 0.5px rgba(0,0,0,0.1);
+  border-radius: .75em;
+  padding: 2%;
+}
+
+.btn-calcular{
+  background-color: #01a7c2;
+  border:.10em solid #01a7c2;
+  color:#fff;
+  border-radius: 8px;
+  padding:1em .5em;
+   width: 100%;
+}
+
