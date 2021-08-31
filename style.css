@@ -78,10 +78,6 @@ body{
     border-color: #f2F6FF  !important;;
 }
 
-
-
-
-
 .input-geral :focus{
   border-color: RED;
 }
