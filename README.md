@@ -1,6 +1,6 @@
 <h1  align="center">
 
-<img  src="img/Mockup(1).svg" alt="">
+<img  src="img/Mockup (1).svg" alt="">
                                    
 </h1>
 
