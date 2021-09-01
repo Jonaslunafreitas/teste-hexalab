@@ -1,8 +1,7 @@
 <h1  align="center">
 
-<img  src="Mockup.png alt="">
-                                   
-</h1>
+<img  alt="Podcastr"  title="Podcastr"  src="https://github.com/Jonaslunafreitas/teste-hexalab/blob/main/img/Mockup.png" />
+                                    
 
 ## 🧪 Technologies
 
