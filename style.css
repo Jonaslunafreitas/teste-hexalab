@@ -65,11 +65,11 @@ body{
 
 .input-geral{
   background-color: #f2F6FF !important;
-  border-color: #f2F6FF  !important;;
+  border-color: #f2F6FF  ;
   border-radius: 8px;
   padding:1em .5em;
   width: 100px;
-  font-family: inherit;
+  font-family: 'Mulish', sans-serif;;
   text-align: right;
 }
 
@@ -78,13 +78,6 @@ body{
     border-color: #f2F6FF  !important;;
 }
 
-
-
-
-
-.input-geral :focus{
-  border-color: RED;
-}
 
 .form-control:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #b1b9cc;
