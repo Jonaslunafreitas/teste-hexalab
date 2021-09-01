@@ -13,7 +13,16 @@ function Base() {
       setIsValidValorPedido("is-invalid")
   }, [valorPedido]);
 
-  
+/*   const [personalizado, setPersonalizado] = useState(0);
+  let [isValidPersonalizado, setIsValidpersonalizadoo]  = useState("valid");
+  useEffect(()=>{
+      if (!!personalizado) {
+        setIsValidPersonalizado("valid");
+        return;
+      }
+      setIsValidPersonalizado("is-invalid")
+  }, [personalizado]); */
+
   return (
     <>
     <header> </header>
@@ -56,7 +65,7 @@ function Base() {
               <div className="col-sm-12 col-md-8 col-lg-8">
                 <div className="input-group">
                   <span className="input-group-text span-cinza" >%</span>
-                  <input type="text" id="personalizado" required className="form-control input-geral" />
+                  <input type="text" id="personalizado" className="form-control input-geral"  /*  onChange={(event)=>setPersonalizado(event.target.value)} required className={'form-control input-geral '+ isValidPersonalizado} *//>
                 </div>
               </div>
             </section>
