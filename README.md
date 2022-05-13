@@ -9,9 +9,9 @@
   
   ## And see it working in
 
-**[Go to the website](https://dashing-smakager-3a1c36.netlify.app)**
+**[Go to the website](https://sparkling-torrone-d98bf4.netlify.app)**
 ```bash
-https://dashing-smakager-3a1c36.netlify.app
+https://sparkling-torrone-d98bf4.netlify.app
 ``` 
   
 ## 🧪 Technologies
