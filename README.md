@@ -3,6 +3,13 @@
 <img  alt="Podcastr"  title="Podcastr"  src="https://github.com/Jonaslunafreitas/teste-hexalab/blob/main/img/Mockup.png" />
                                     
 
+  And see it working in
+
+**[Go to the website](https://dashing-smakager-3a1c36.netlify.app)**
+```bash
+https://dashing-smakager-3a1c36.netlify.app
+``` 
+  
 ## 🧪 Technologies
 
   
